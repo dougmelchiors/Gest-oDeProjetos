@@ -1,0 +1,44 @@
+Douglas, Hueliton, Jonathan
+
+--Java
+public class Somanumeros {
+	public static float RodaCalculo(float Numero1, float Numero2)
+	{
+           float Soma = Numero1 + Numero2;
+	   return Soma;
+        }
+}
+
+public class TestaSomanumeros {
+     public void testSomanumeros(){
+	float DefineNumero1 = 5;
+	float DefineNumero2 = 5;
+	float RetornoEsperado = 10;
+	float RetornoFeito = Calculo.Somanumeros(DefineNumero1,DefineNumero2);
+	asserEquals(RetornoEsperado,RetornoFeito,0);
+     }
+
+}
+
+--C#
+public static class Somanumeros
+{
+    public static int Somar(int Numero1, int Numero2)
+        => Numero1 + Numero2;
+}
+
+public void TesteSomanumeros()
+{
+    int Numero1 = 5, 
+        Numero2 = 5, 
+    int resultado = Somanumeros.Somar(Numero1, Numero2);
+    Assert.AreEqual(esperado, resultado);
+}
+
+--Phyton
+def soma(x, y):
+    return x + y
+
+class TesteSomanumeros(Teste):
+    def Teste2(self):   
+        self.assertEqual(soma(2, 2), 4)
